@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kats.xml_animations.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/minion"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        />
+
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="FADE IN"
+        android:id="@+id/fade_in"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/imageView"
+        />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="FADE OUT"
+        android:id="@+id/fade_out"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/fade_in"
+        android:layout_below="@+id/imageView"
+        />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="ZOOM IN"
+        android:id="@+id/zoom_in"
+        android:layout_margin="10dp"
+        android:layout_below="@id/fade_in"
+        />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="ZOOM OUT"
+        android:id="@+id/zoom_out"
+        android:layout_margin="10dp"
+        android:layout_below="@id/fade_out"
+        android:layout_toRightOf="@id/zoom_in"
+        />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="SLIDE UP"
+        android:layout_margin="10dp"
+        android:id="@+id/slide_up"
+        android:layout_below="@id/zoom_in"
+        />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="SLIDE DOWN"
+        android:layout_margin="10dp"
+        android:id="@+id/slide_down"
+        android:layout_below="@id/zoom_out"
+        android:layout_toRightOf="@id/slide_up"
+        />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="MOVE"
+        android:layout_margin="10dp"
+        android:id="@+id/move"
+        android:layout_below="@id/slide_up"
+        />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="ROTATE"
+        android:layout_margin="10dp"
+        android:id="@+id/rotate"
+        android:layout_below="@id/slide_down"
+        android:layout_toRightOf="@id/slide_up"
+        />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="BLINK"
+        android:layout_margin="10dp"
+        android:id="@+id/blink"
+        android:layout_below="@id/move"
+        />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="BOUNCE"
+        android:layout_margin="10dp"
+        android:id="@+id/bounce"
+        android:layout_below="@id/rotate"
+        android:layout_toRightOf="@id/blink"
+        />
+
+</RelativeLayout>
